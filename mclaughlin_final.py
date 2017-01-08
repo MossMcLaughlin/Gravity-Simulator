@@ -25,36 +25,25 @@ import numpy as np
 
   # Settings
 
-'''
+
 fps = 60                  # Frames per second
 dt = 1/fps                # time rate ( real time is 1/fps)
 window_size = [500,500]   # window size in pixels
 center = [window_size[0]*0.5,window_size[1]*0.5]
-'''
-global window_size = [500,500]
-global center = [window_size[0]*0.5,window_size[1]*0.5]
-global fps = 60
-global dt = 1/fps
-'''
+
+
 orbital_path = True   # Shows the path of the planets
 num_planets = 9
 mass_sun = 1000      # to increase orbital velocity, increase G or mass_sun
 G1 = 100000          # Gravitational Constant
 maxmass = 2         # maximum randomly assigned mass
 density = 0.01      # change size of planets [ r = (mass/density)**(1/3) ]
-'''
-global orbital_path = True
-global num_planets = 9
-global mass_sun     = 1000
-global G1          =100000
-global maxmass  =2
-global density  =0.01
 
 
-#num_bodies = 50     
-#G2 = 200            # Gravitational constant
+num_bodies = 50     
+G2 = 200            # Gravitational constant
 collisions = True      # set collisions on/off
-#panning = False      # set panning on/off
+panning = False      # set panning on/off
 pan_speed = 1    # pan speed in pixels * fps
 auto_reset = True   # Resets if all objects are off screen
 reset_time = 1      # Time to check for reset (seconds)
